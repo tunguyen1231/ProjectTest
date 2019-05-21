@@ -24,7 +24,7 @@
 
 
 		if ($bmi < 18.5) {
-            echo "Phân loại : Đcm que củi ư )))";
+            echo "Qúa gầy";
         } elseif ( ($bmi >= 18.5) && ($bmi <= 24.9 ) ) {
             echo "Phân loại : Chuẩn rồi";
         } elseif ( ($bmi >= 25) && ($bmi <= 29.9 )) {
