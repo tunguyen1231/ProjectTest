@@ -15,7 +15,7 @@
 
 			$bmi = $weight/($height*$height);
 
-			echo "chỉ số BMI là :" . " " . $BMI ;
+			echo "chỉ số BMI là :" . " " . $bmi ;
 		}
 	?>
 
