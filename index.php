@@ -10,8 +10,8 @@
 <body>
 	<?php
 		if (isset($_POST["height"]) && isset($_POST["weight"])) {
-			$weight = (int) $_POST["weight"];
-			$height = (int) $_POST["height"];
+			$weight = (float) $_POST["weight"];
+			$height = (float) $_POST["height"];
 
 			$bmi = $weight/($height*$height);
 
