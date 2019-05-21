@@ -9,6 +9,9 @@
 </head>
 <body>
 	<?php
+
+	$weight = '';
+	$height = '';
 		if (isset($_POST["height"]) && isset($_POST["weight"])) {
 			$weight = (float) $_POST["weight"];
 			$height = (float) $_POST["height"];
@@ -17,6 +20,8 @@
 
 			echo "chỉ số BMI là :" . " " . $bmi ;
 		}
+		echo "<br>";
+
 
 		if ($bmi <= 18.5) {
 			echo "Phân loại : Dưới chuẩn";
@@ -31,7 +36,6 @@
 			}	else{
 				echo "Phân loại : Container )))))";
 			}
-		}
 	?>
 
 
@@ -46,11 +50,11 @@
 	            <form name="bmi" action="" method="post">
 	                <div class="form-group">
 	                    <label >Chiều cao ( cm )</label>
-	                    <input type="text" class="form-control" name="height" value="">
+	                    <input type="text" class="form-control" name="height" value="<?php echo $height ?>">
 	                </div>
 	                <div class="form-group">
 	                    <label >Cân nặng ( kg ) </label>
-	                    <input type="text" class="form-control" name="weight">
+	                    <input type="text" class="form-control" name="weight"  value="<?php echo $weight ?>">
 	                </div>
 	                <button type="submit" name="calc" class="btn btn-primary">Submit</button>
 	            </form>
