@@ -23,19 +23,22 @@
 		echo "<br>";
 
 
-		if ($bmi <= 18.5) {
-			echo "Phân loại : Dưới chuẩn";
-			} elseif ($bmi <= 24.9) {
-				echo "Phân loại : Chuẩn rồi";
-			}	elseif ($bmi <= 29.9) {
-				echo "Phân loại : Thừa cân rồi giảm thôi";
-			}	elseif ($bmi <= 34.9) {
-				echo "Phân loại : Béo cmn phì cấp độ 1 rồi không giảm nhanh đi";
-			}	elseif ($bmi <= 39.9) {
-				echo "Phân loại : Béo cmn phì cấp độ 2. Lăn vòng vòng rồi";
-			}	else{
-				echo "Phân loại : Container )))))";
-			}
+		if ($bmi < 18.5) {
+            echo "Phân loại : Dưới chuẩn";
+        } elseif ( ($bmi >= 18.5) && ($bmi <= 24.9 ) ) {
+            echo "Phân loại : Chuẩn rồi";
+        } elseif ( ($bmi >= 25) && ($bmi <= 29.9 )) {
+            echo "Phân loại : Thừa cân rồi giảm thôi";
+        } elseif ( ($bmi >= 30) && ($bmi <= 34.9 )) {
+            echo "Phân loại : Béo cmn phì cấp độ 1 rồi không giảm nhanh đi";
+        } elseif ( ($bmi >= 35) && ($bmi <= 39.9 )) {
+            echo "Phân loại : Béo cmn phì cấp độ 2. Lăn vòng vòng rồi";
+        } elseif ($bmi >= 40) {
+            echo "Phân loại : Container )))))";
+        } else {
+            echo "<br> Không xác định";
+        }
+    
 	?>
 
 
