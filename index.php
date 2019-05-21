@@ -19,7 +19,8 @@
 			$bmi = $weight/($height*$height);
 
 			echo "chỉ số BMI là :" . " " . $bmi ;
-			
+			echo "<br>";
+
 			if ($bmi < 18.5) {
 	            echo "Qúa gầy";
 	        } elseif ( ($bmi >= 18.5) && ($bmi <= 24.9 ) ) {
